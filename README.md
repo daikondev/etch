@@ -14,6 +14,8 @@ Multiple passes of the same color should reapply the color additively.
 
 ### Resources:
 1. Learn CSS-Grid: https://learncssgrid.com/.
+2. Complete guide to CSS Grid: https://css-tricks.com/snippets/css/complete-guide-grid/.
+3. 
 
 
 _Created by daikondev (__whiteraddishdev@gmail.com__)_.
