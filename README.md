@@ -13,9 +13,8 @@ Multiple passes of the same color should reapply the color additively.
 - [] (Probably not happening) Create a functionality which allows you to download your drawing.
 
 ### Resources:
-1. Learn CSS-Grid: https://learncssgrid.com/.
-2. Complete guide to CSS Grid: https://css-tricks.com/snippets/css/complete-guide-grid/.
-3. 
+1. onload event: https://www.w3schools.com/jsref/event_onload.asp
+2. 
 
 
 _Created by daikondev (__whiteraddishdev@gmail.com__)_.
