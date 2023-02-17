@@ -3,7 +3,7 @@
 This is my submission for the etch-a-sketch challenge on The Odin Project.
 
 ### Goals:
-- [] Create an interactive grid.
+- [x] Create an interactive grid.
 - [] Allow the grid dimensions to change by changing how many pixels it is made from.
 - [] Create a tool which allows you to paint the grid with a single color.
 - [] Create an eraser tool.
