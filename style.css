@@ -1,6 +1,10 @@
 * {
     background-color: lightskyblue;
 }
+main {
+    display: flex;
+    flex-direction: column;
+}
 #grid {
     margin: auto;
     border: 1px solid black;;
