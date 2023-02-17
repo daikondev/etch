@@ -1,5 +1,9 @@
 const grid = document.querySelector("#grid");
-
+const erase = document.querySelector("#erase");
+let mode = 'color';
+erase.addEventListener('click', (e)=>{
+    mode = 'erase';
+})
 function makeGrid(size){
     for(let row = 0; row < size; row++){
         let gridRow = document.createElement('div');
@@ -15,6 +19,10 @@ function makeGrid(size){
         }
     }
 }
-function colorPixel(e){
-    e.target.style.backgroundColor = 'black';
+function colorPixel(e, color='black'){
+    if (mode === "color"){
+    e.target.style.backgroundColor = color;
+} else if (mode === "erase"){
+    e.target.style.backgroundColor = "#fff";
+    }
 }
