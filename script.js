@@ -5,6 +5,13 @@ const reset = document.querySelector("#reset");
 const colorPicker = document.querySelector('#color-picker');
 let mode = 'color';
 let currentColor = 'black';
+
+window.onload = function (){
+    makeGrid(16);
+};
+reset.addEventListener('click', () => {
+    window.location.reload();
+})
 color.addEventListener('click', ()=>{
     mode = 'color';
 })

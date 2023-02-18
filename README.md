@@ -14,7 +14,8 @@ Multiple passes of the same color should reapply the color additively.
 
 ### Resources:
 1. onload event: https://www.w3schools.com/jsref/event_onload.asp
-2. 
+2. color input type; https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
+3. 
 
 
 _Created by daikondev (__whiteraddishdev@gmail.com__)_.
