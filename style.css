@@ -10,8 +10,8 @@ main {
     border: 1px solid black;;
     display: flex;
     flex-direction: column;
-    width: 600px;
-    height: 600px;
+    width: 700px;
+    height: 700px;
 }
 .row {
     display: flex;
