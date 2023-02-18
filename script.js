@@ -3,11 +3,12 @@ const erase = document.querySelector("#erase");
 const color = document.querySelector("#color")
 const reset = document.querySelector("#reset");
 const colorPicker = document.querySelector('#color-picker');
+const pixelSlider = document.querySelector('#pixelSlider');
 let mode = 'color';
 let currentColor = 'black';
-
+let gridSize = 16;
 window.onload = function (){
-    makeGrid(16);
+    makeGrid(gridSize);
 };
 reset.addEventListener('click', () => {
     window.location.reload();
@@ -21,6 +22,7 @@ colorPicker.addEventListener('change', (e) => {
 erase.addEventListener('click', ()=>{
     mode = 'erase';
 })
+
 function makeGrid(size){
     for(let row = 0; row < size; row++){
         let gridRow = document.createElement('div');
