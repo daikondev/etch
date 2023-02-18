@@ -1,7 +1,17 @@
 const grid = document.querySelector("#grid");
 const erase = document.querySelector("#erase");
+const color = document.querySelector("#color")
+const reset = document.querySelector("#reset");
+const colorPicker = document.querySelector('#color-picker');
 let mode = 'color';
-erase.addEventListener('click', (e)=>{
+let currentColor = 'black';
+color.addEventListener('click', ()=>{
+    mode = 'color';
+})
+colorPicker.addEventListener('change', (e) => {
+    currentColor = e.target.value;
+})
+erase.addEventListener('click', ()=>{
     mode = 'erase';
 })
 function makeGrid(size){
@@ -19,7 +29,7 @@ function makeGrid(size){
         }
     }
 }
-function colorPixel(e, color='black'){
+function colorPixel(e, color=currentColor){
     if (mode === "color"){
     e.target.style.backgroundColor = color;
 } else if (mode === "erase"){
