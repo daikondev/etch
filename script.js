@@ -22,6 +22,10 @@ colorPicker.addEventListener('change', (e) => {
 erase.addEventListener('click', ()=>{
     mode = 'erase';
 })
+pixelSlider.addEventListener('input', (e) =>{
+    gridSize = e.target.value;
+    makeGrid(gridSize);
+})
 
 function makeGrid(size){
     for(let row = 0; row < size; row++){
