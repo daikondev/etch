@@ -1,26 +1,35 @@
+//DOM elements:
 const grid = document.querySelector("#grid");
 const erase = document.querySelector("#erase");
 const color = document.querySelector("#color")
 const reset = document.querySelector("#reset");
 const colorPicker = document.querySelector('#color-picker');
+const gridSize = document.querySelector('#grid-size');
+// Global variables:
+const defaultSize = 16;
 let mode = 'color';
 let currentColor = 'black';
-let gridSize = 16;
-window.onload = function (){
-    makeGrid(gridSize);
-};
+let currentSize = defaultSize;
+// Event listeners:
 reset.addEventListener('click', () => {
-    window.location.reload();
+    currentSize = defaultSize;
+    resetGrid();
 })
 color.addEventListener('click', ()=>{
     mode = 'color';
 })
 colorPicker.addEventListener('change', (e) => {
     currentColor = e.target.value;
+    mode = 'color';
 })
 erase.addEventListener('click', ()=>{
     mode = 'erase';
 })
+gridSize.addEventListener('change', (e) => {
+    currentSize = e.target.value;
+    resetGrid();
+})
+// Functions
 function makeGrid(size){
     for(let row = 0; row < size; row++){
         let gridRow = document.createElement('div');
@@ -43,3 +52,11 @@ function colorPixel(e, color=currentColor){
     e.target.style.backgroundColor = "#fff";
     }
 }
+function resetGrid(){
+    grid.innerHTML = '';
+    makeGrid(currentSize);
+}
+// Loading a default grid on page load.
+window.addEventListener('DOMContentLoaded',()=>{
+    makeGrid(currentSize);
+})
