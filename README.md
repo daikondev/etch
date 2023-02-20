@@ -13,6 +13,6 @@ This is my submission for the etch-a-sketch challenge on The Odin Project.
 1. onload event: https://www.w3schools.com/jsref/event_onload.asp
 2. color input type; https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
 3. input : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
-
+4. handling page load events: https://www.javascripttutorial.net/javascript-dom/javascript-page-load-events/
 
 _Created by daikondev (__whiteraddishdev@gmail.com__)_.
