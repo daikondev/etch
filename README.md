@@ -10,7 +10,6 @@ This is my submission for the etch-a-sketch challenge on The Odin Project.
 - [x] Create a color-wheel which allows you to change the color you're using.
 - [] Create a shading tool, which adds 10% opacity of whatever color you're using to a pixel.
 Multiple passes of the same color should reapply the color additively.
-- [] (Probably not happening) Create a functionality which allows you to download your drawing.
 
 ### Resources:
 1. onload event: https://www.w3schools.com/jsref/event_onload.asp
